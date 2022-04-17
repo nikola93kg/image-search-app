@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import search from '../Images/search.svg';
+import React from 'react';
 import home from '../Images/home.svg'
 
 function Pictures({ results }) {
@@ -17,7 +16,7 @@ function Pictures({ results }) {
                 console.log(item.id);
                 return (
                     <div>
-                        <a href={item.links.html} key={item.id} target='_blank'>
+                        <a href={item.links.html} key={item.id} target='_blank' rel="noopener noreferrer">
                             <img src={item.urls.regular} alt='val.alt_description' />
                         </a>
                     </div>
