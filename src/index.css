@@ -11,3 +11,105 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.app-container {
+  background-image: linear-gradient(180deg, rgba(244, 244, 241, 0.544), #020202c7), url('https://images.unsplash.com/photo-1649877906129-905fa16c7481?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-box {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search-box input {
+  width: 500px;
+  height: 20px;
+  align-self: center;
+  border: none;
+  padding: 15px;
+  outline: none;
+}
+
+.search-box button {
+  height: 50px;
+  align-self: center;
+  border: none;
+  padding: 15px;
+  transition: 0.4s all;
+}
+.search-box button:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+.search-box button svg {
+  height: 25px;
+  width: 25px;
+}
+.display-box {
+  /* border: 1px solid #f00; */
+  display: flex;
+  padding-bottom: 50px;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.display-box img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: 0.4s all;
+}
+.display-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px #0007;
+  border-radius: 3px;
+}
+.empty-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 73.6vh;
+}
+.empty-results img:hover {
+  transform: none;
+  box-shadow: none;
+}
+.empty-results img {
+  width: 100%;
+}
+.loading-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.loading-container img {
+  /* height: 300px; */
+}
+.footer-container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #0008;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #fff7;
+  transition: 0.4s all;
+}
+.footer-container a:hover {
+  color: #fff;
+}
