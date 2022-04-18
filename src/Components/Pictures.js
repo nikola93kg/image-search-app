@@ -10,20 +10,19 @@ function Pictures({ results }) {
         </div>
     }
 
+
     return (
         <div className="results">
             {results.map((item) => {
-                console.log(item.id);
                 return (
-                    <div>
-                        <a href={item.links.html} key={item.id} target='_blank' rel="noopener noreferrer">
+                    <div key={item.id}>
+                        <a href={item.links.html} target='_blank' rel="noopener noreferrer">
                             <img src={item.urls.regular} alt='val.alt_description' />
                         </a>
                     </div>
                 )
             })}
         </div>
-
     )
 }
 

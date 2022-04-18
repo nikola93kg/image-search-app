@@ -36,7 +36,6 @@ function Search() {
 
     return (
         <div className="search-container">
-
             <div className="search-box">
                 <input type="text" placeholder="search photos from the unsplash.com" value={searchImg} onChange={(e) => setSearchImg(e.target.value)} />
                 <button type='submit' onClick={submit}>
@@ -46,7 +45,6 @@ function Search() {
             <div className="display-box">
                 <Pictures results={imgData} />
             </div>
-
         </div>
     )
 }
